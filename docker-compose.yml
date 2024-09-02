@@ -1,0 +1,27 @@
+services:
+  speedupapi_redis:
+    image: ${DOCKER_REGISTRY-}speedupapiredis
+    container_name: SpeedUpAPI_Redis.Api
+    build:
+      context: .
+      dockerfile: SpeedUpAPI_Redis/Dockerfile
+    ports:
+     - "5000:5000"
+     - "5001:5001"
+
+  products.database:
+    image: postgres:latest
+    container_name: products.database
+    environment:
+      - POSTGRES_DB=products
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+     - ./.containers/product-db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+  product.redis:
+    image: redis:latest
+    restart: always
+    ports:
+     - "6379:6379"

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\SpeedUpAPI_Redis.props" />
+</Project>

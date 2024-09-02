@@ -1,0 +1,6 @@
+@SpeedUpAPI_Redis_HostAddress = http://localhost:5041
+
+GET {{SpeedUpAPI_Redis_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

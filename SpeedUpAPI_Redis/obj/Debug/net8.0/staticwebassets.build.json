@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "4U69N0QTGEh7zlxsTg3kuHtMAZnsbqgVnFg8o76jCtc=",
+  "Source": "SpeedUpAPI_Redis",
+  "BasePath": "_content/SpeedUpAPI_Redis",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
